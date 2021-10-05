@@ -1,15 +1,17 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main(void)
-{
-	int kilometers;
-	int miles;
-	int mile = 1.609;
+int main(void) {
 
-	printf("Please enker kilometers: \n");
-	scanf_s("%d", &kilometers);
+	double mile, km;
 
-	miles = mile * kilometers;
+	printf("Please enter kilometers: ");
 
-	printf("%d km is equal to %.1f \n", kilometers, miles);
+	scanf_s("%lf", &km);
+
+	mile = km / 1.609;
+
+	printf("%.1f km is equal to %.1f miles.\n", km, mile);
+
+	return 0;
+
 }
