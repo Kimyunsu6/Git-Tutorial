@@ -4,9 +4,7 @@ int main(void)
 {
 	int kilometers;
 	int miles;
-	int mile;
-
-	mile = 1.609
+	int mile = 1.609;
 
 	printf("Please enker kilometers: \n");
 	scanf_s("%d", &kilometers);
